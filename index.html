@@ -32,9 +32,9 @@
     <section id="login">
       <form action="/null" method="post">
         <h2>Returning users &#8212; please log in:</h2>
-        Email address:
-        <input type="email" name="email-address">
-        Password:
+        <label for "email-login">Email address:</label>
+        <input type="text" name="email-login"> <!-- email-login used to differentiate from email-address below -->
+        <label for "password">Password:</label>
         <input type="text" name="password"> <a href="http://www.example.com">(Forgot password?)</a>
         <button type="button">Login</button>
         Remember Me <input type="radio" name="remember" value="remember">
@@ -44,10 +44,13 @@
     <section id="register">
       <form action="/null" method="post">
         <h2>Not yet registered? Please sign up:</h2>
-        Display name:
+        <label for "email-login">Display name:</label>
         <input type="text" name="displayname"> (This cannot be changed once registered.)
-        Email address:
-        <input type="email" name="email-address"> (Do not register twice with the same email address or your registration will be blocked.)
+        <label for "email-address">Email address:</label>
+        <input type="email" name="email-address"> (Do not register twice with the same email
+        address or your registration will be blocked.) <!-- email-address used to differentiate
+                                                        from email-login above, this email must
+                                                        be authenticated because it is a new user -->
         Time Zone <select>
           <option value="eastern">Eastern</option>
           <option value="central">Central</option>
