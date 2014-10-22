@@ -28,8 +28,6 @@ section {
   margin-left: 3em;
   margin-right: 3em;
   font-size: 1em;
-  background-color: #FAFAFA;
-  border: 1px solid #ddd;
   padding: 1em;
   clear: left;
   clear: right;
@@ -40,5 +38,14 @@ section {
 h2  {
 
   font-weight: bold;
+
+}
+
+form {
+
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
 
 }
