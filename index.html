@@ -27,20 +27,23 @@
       Login/Register
     </header>
 
-<!-- content below --->
+<!-- content below -->
 
     <section id="login">
       <form action="/null" method="post">
+
+        <div class="login-header">
         <h2>Returning users &#8212; please log in:</h2>
+        </div>
 
         <div>
-        <label for "email-login">Email address:</label>
+        <label for="email-login">Email address:</label>
         <input type="text" name="email-login"> <!-- email-login used to differentiate from email-address below,
                                                 this is text-only and the other must be authenticated -->
         </div>
 
         <div>
-        <label for "password">Password:</label>
+        <label for="password">Password:</label>
         <input type="text" name="password"> <a href="http://www.example.com">(Forgot password?)</a>
         </div>
 
@@ -57,15 +60,18 @@
 
     <section id="register">
       <form action="/null" method="post">
+
+        <div class="register-header">
         <h2>Not yet registered? Please sign up:</h2>
+        </div>
 
         <div>
-        <label for "email-login">Display name:</label>
+        <label for="email-login">Display name:</label>
         <input type="text" name="displayname"> (This cannot be changed once registered.)
         </div>
 
         <div>
-        <label for "email-address">Email address:</label>
+        <label for="email-address">Email address:</label>
         <input type="email" name="email-address"> (Do not register twice with the same email
         address or your registration will be blocked.) <!-- email-address used to differentiate
                                                         from email-login above, this email must
