@@ -31,12 +31,6 @@ section {
 
 }
 
-h2  {
-
-  font-weight: bold;
-
-}
-
 form {
 
     margin: 0 auto;
@@ -49,8 +43,20 @@ form {
 
 }
 
+form div + div {
+
+    margin-top: 1em;
+
+}
+
 #registration-note  {
 
     font-size: .85em;
+
+}
+
+.login-header, .register-header {
+
+    font-weight: bold;
 
 }
