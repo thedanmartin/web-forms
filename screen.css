@@ -43,7 +43,7 @@ form {
 
 }
 
-form div + div {
+li  {
 
     margin-top: 1em;
 
@@ -52,11 +52,22 @@ form div + div {
 #registration-note  {
 
     font-size: .85em;
+    font-style: italic;
 
 }
 
 .login-header, .register-header {
 
     font-weight: bold;
+
+}
+
+button, input, select, textarea {
+
+  font-family : inherit;          /* uses same fonts as rest of page */
+  font-size   : 100%;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For all Gecko based browsers */
+          box-sizing: border-box;
 
 }
