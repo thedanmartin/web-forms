@@ -38,17 +38,18 @@
 
         <div>
         <label for="email-login">Email address:</label>
-        <input type="text" name="email-login"> <!-- email-login used to differentiate from email-address below,
+        <input type="text" id="email-login"> <!-- email-login used to differentiate from email-address below,
                                                 this is text-only and the other must be authenticated -->
         </div>
 
         <div>
         <label for="password">Password:</label>
-        <input type="text" name="password"> <a href="http://www.example.com">(Forgot password?)</a>
+        <input type="text" id="password"> <a href="http://www.example.com">(Forgot password?)</a>
         </div>
 
         <div class="remember-me">
-        Remember Me <input type="radio" name="remember" value="remember">
+        Remember Me
+        <input type="radio" name="remember" value="remember">
         </div>
 
         <div class="login-button">
@@ -66,20 +67,21 @@
         </div>
 
         <div>
-        <label for="email-login">Display name:</label>
-        <input type="text" name="displayname"> (This cannot be changed once registered.)
+        <label for="displayname">Display name:</label>
+        <input type="text" id="displayname"> (This cannot be changed once registered.)
         </div>
 
         <div>
         <label for="email-address">Email address:</label>
-        <input type="email" name="email-address"> (Do not register twice with the same email
+        <input type="email" id="email-address"> (Do not register twice with the same email
         address or your registration will be blocked.) <!-- email-address used to differentiate
                                                         from email-login above, this email must
                                                         be authenticated because it is a new user -->
         </div>
 
         <div class="timezone">
-        Time Zone <select>
+        Time Zone
+        <select>
           <option value="eastern">Eastern</option>
           <option value="central">Central</option>
           <option value="mountain">Mountain</option>
