@@ -31,26 +31,26 @@
 
   <section id="login">
     <form action="/null" method="post">
-      <div class="login-header">
+      <h2>
           Returning users &#8212; please log in:
-      </div>
-       <ul id="login-ist">
+      </h2>
+       <ul id="login-list">
          <li>
           <label for="email-login">Email address:</label>
-          <input type="text" id="email-login">
+          <input type="text" id="email-login" name="email-login">
           <!-- email-login used to differentiate from email-address below,
                this is text-only and the other must be authenticated   -->
          </li>
          <li>
            <label for="password">Password:</label>
-           <input type="password" id="password"> <a href="http://www.example.com">(Forgot password?)</a>
+           <input type="password" id="password" name="password"> <a href="http://www.example.com">(Forgot password?)</a>
          </li>
          <li>
            <label for="remember-me">Remember Me</label>
            <input id="remember-me" type="checkbox" value="true">
          </li>
          <li>
-           <input type="button" value="Login" />
+           <input id="login-button" name="login-button" type="button" value="Login" />
          </li>
        </ul>
     </form>
@@ -58,17 +58,17 @@
 
   <section id="register">
     <form action="/null" method="post">
-      <div class="register-header">
+      <h2>
         Not yet registered? Please sign up:
-      </div>
-      <ul>
+      </h2>
+      <ul id="register-list">
         <li>
          <label for="displayname">Display name:</label>
-         <input type="text" id="displayname"> (This cannot be changed once registered.)
+         <input type="text" id="displayname" name="displayname"> (This cannot be changed once registered.)
         </li>
         <li>
          <label for="email-address">Email address:</label>
-         <input type="email" id="email-address"> (Do not register twice with the same email
+         <input type="email" id="email-address" name="email-address"> (Do not register twice with the same email
          address or your registration will be blocked.)
          <!-- email-address used to differentiate from email-login above, this email must
               be authenticated because it is a new user -->
@@ -83,13 +83,13 @@
             </select>
         </li>
         <li>
-          <input type="button" value="Submit" />
+          <input name="submit" id="submit" type="button" value="Submit" />
         </li>
         <li>
-          <div id="registration-note">
+          <h3>
            Please note that it can sometimes take a few days for your registration to be approved.
            When it is, you will be emailed your password.
-          </div>
+          </h3>
         </li>
       </ul>
     </form>
