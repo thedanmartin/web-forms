@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- redesign of ilxor.com forum login and registration pages -->
+<!-- for Dr. Karl Stolley's COM 530 course at Illinois Tech - ks4.us/530 -->
+<!-- by Dan Martin - danmartin.net -->
+
 <!-- head info below -->
 
 <head>
@@ -44,8 +48,10 @@
          <li>
           <label for="email-login">Email address:</label>
           <input type="text" id="email-login" name="email-login" placeholder="Email Address" autofocus>
-          <!-- email-login used to differentiate from email-address below,
-               this is text-only and the other must be authenticated   -->
+
+<!-- input type="text" used here to differentiate from email-address below,
+this is text-only and the other must be authenticated  -->
+
          </li>
          <li>
            <label for="password">Password:</label>
@@ -77,8 +83,10 @@
          <label for="email-address">Email address:</label>
          <input type="email" id="email-address" name="email-address" placeholder="Email Address"> (Do not register twice with the same email
          address or your registration will be blocked.)
-         <!-- email-address used to differentiate from email-login above, this email must
-              be authenticated because it is a new user -->
+
+<!-- input type="email" used to differentiate from email-login above, this must
+      be authenticated as a legitimately formed email address because it is a new user -->
+
         </li>
         <li>
           Time Zone
@@ -89,6 +97,10 @@
               <option value="pacific">Pacific</option>
             </select>
         </li>
+
+<!-- I did not add the full list of time zones that ilxor.com has, because
+      the list is huge and I didn't feel like reformatting it -->
+
         <li>
           <input name="submit" id="submit" type="button" value="Submit" />
         </li>
