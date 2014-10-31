@@ -8,9 +8,14 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
+  <!-- my styles -->
   <link rel="stylesheet" href="screen.css" />
-  <!-- <link rel="stylesheet" href="reset.css" /> -->
+  <!-- formalize styles -->
+  <link rel="stylesheet" href="formalize.css" />
 
+  <!-- jquery included here to help formalize work -->
+  <script src="jquery.js"></script>
+  <script src="jquery.formalize.js"></script>
   <script src="modernizr.custom.99475.js"></script>
 
   <title>Login/Registration Page</title>
@@ -34,16 +39,17 @@
       <h2>
           Returning users &#8212; please log in:
       </h2>
+      <hr>
        <ul id="login-list">
          <li>
           <label for="email-login">Email address:</label>
-          <input type="text" id="email-login" name="email-login">
+          <input type="text" id="email-login" name="email-login" placeholder="Email Address">
           <!-- email-login used to differentiate from email-address below,
                this is text-only and the other must be authenticated   -->
          </li>
          <li>
            <label for="password">Password:</label>
-           <input type="password" id="password" name="password"> <a href="http://www.example.com">(Forgot password?)</a>
+           <input type="password" id="password" name="password" placeholder="Password"> <a href="http://www.example.com">(Forgot password?)</a>
          </li>
          <li>
            <label for="remember-me">Remember Me</label>
@@ -61,14 +67,15 @@
       <h2>
         Not yet registered? Please sign up:
       </h2>
+      <hr>
       <ul id="register-list">
         <li>
          <label for="displayname">Display name:</label>
-         <input type="text" id="displayname" name="displayname"> (This cannot be changed once registered.)
+         <input type="text" id="displayname" name="displayname" placeholder="Display Name"> (This cannot be changed once registered.)
         </li>
         <li>
          <label for="email-address">Email address:</label>
-         <input type="email" id="email-address" name="email-address"> (Do not register twice with the same email
+         <input type="email" id="email-address" name="email-address" placeholder="Email Address"> (Do not register twice with the same email
          address or your registration will be blocked.)
          <!-- email-address used to differentiate from email-login above, this email must
               be authenticated because it is a new user -->
