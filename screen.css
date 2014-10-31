@@ -76,6 +76,17 @@ button, input, select, textarea {
 
 }
 
+input:focus,
+button:focus,
+a.button:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: #000000 0 0 5px 0;
+  -moz-box-shadow: #000000 0 0 5px 0;
+  box-shadow: #000000 0 0 5px 0;
+  z-index: 1;
+}
+
 #login-button {
 
   background: #E0F2FF;
